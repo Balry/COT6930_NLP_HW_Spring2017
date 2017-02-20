@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/OpenNLP_HW1/src/cot_6930_nlp_hw1_mp/HW1_OpenNLP_MP.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="cot_6930_nlp_hw1_mp.HW1_OpenNLP_MP"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="OpenNLP_HW1"/>
+</launchConfiguration>

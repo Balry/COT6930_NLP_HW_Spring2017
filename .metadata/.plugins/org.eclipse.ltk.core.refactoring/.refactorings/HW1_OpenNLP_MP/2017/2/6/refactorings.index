@@ -1,0 +1,12 @@
+1486351096509	Rename package 'examplesMP'
+1486351567330	Rename type 'Tokenizer'
+1486352321828	Rename type 'WhitespaceTokenizer'
+1486352362406	Rename type 'Tokenizers'
+1486352381849	Rename type 'SimpleTokenizer'
+1486359817599	Rename compilation unit 'ProbDetector.java'
+1486359835894	Rename compilation unit 'ProbSenDetector.java'
+1486439292604	Extract local variable 'scanner'
+1486442824695	Rename type 'EntityFinder'
+1486514010356	Delete element
+1486528763324	Rename type 'Parser'
+1486528912279	Rename type 'ParserTool'

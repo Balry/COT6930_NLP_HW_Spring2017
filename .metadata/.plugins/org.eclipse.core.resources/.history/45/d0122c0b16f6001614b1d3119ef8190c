@@ -1,0 +1,109 @@
+package cot_6930_nlp_hw1_mp;
+import toolsMP.NamedEntityFinder;
+import toolsMP.POSTagger;
+import toolsMP.SentenceDetector;
+import toolsMP.WSTokenizer;
+import java.io.IOException;
+import java.io.File;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+/**
+ * Utilizes OpenNLP package tools implemented in the toolsMP package to: 
+ * 1) Detect sentences in a news article located in - "hw1_files/news_article.txt"
+ * 2) Tokenize the text into words
+ * 3) Perform part-of-speech (POS) on the text
+ * 4) Find name entities including: Dates, Locations, Money, Organizations, Persons, and Time
+ *
+ * @author "Balry" - Michael Perez
+ * 
+ */
+public class HW1_OpenNLP_MP {
+
+	public static void main(String[] args) throws IOException {
+		//First reading file option (functioning)
+		/*byte[] encoded = Files.readAllBytes(Paths.get("hw1_files/news_article.txt"));
+		String text = new String(encoded, StandardCharsets.UTF_8);*/
+		
+		//Read homework source file
+		Scanner scanner = new Scanner(new File("hw1_files/Source/news_article.txt"));
+		String text = scanner.useDelimiter("\\Z").next();
+		scanner.close();
+		
+		//Question 1 - Sentence Detection
+		PrintWriter q1 = new PrintWriter("hw1_files/Output/Question1_MP.txt");
+		q1.println("~~~~ Question 1 - Detect Sentences Output ~~~~");
+		String [] sentences = SentenceDetector.detectSentences(text); 
+		for(String sentence : sentences){
+			q1.println(sentence);
+		}
+		q1.close();
+		
+		
+		//Question 2 - Tokenize text
+		PrintWriter q2 = new PrintWriter("hw1_files/Output/Question2_MP.txt");
+		q2.println("~~~~ Question 2 - Tokenized Text Output ~~~~");
+		String [] tokenizedText = WSTokenizer.tokenize(text);
+		for(String token : tokenizedText){
+			q2.println(token);
+		}
+		q2.close();
+		
+		
+		//Question 3 - Part-of-Speech (POS)
+		PrintWriter q3 = new PrintWriter("hw1_files/Output/Question3_MP.txt");
+		q3.println("~~~~ Question 3 - Part-of-Speech (POS) Output ~~~~");
+		String POS = POSTagger.getPOSTagsString(text);
+		q3.println(POS);
+		q3.close();
+		
+		
+		//Question 4 - Named Entities Finder
+		PrintWriter q4 = new PrintWriter("hw1_files/Output/Question4_MP.txt");
+		q4.println("~~~~ Question 4 - Named Entities Finder Output ~~~~");
+		
+		//NER Dates
+		q4.println("\r\nDates:");
+		String [] dates = NamedEntityFinder.entitiesSpanToString(NamedEntityFinder.findEntities('d', text), text);
+		for(String d : dates){
+			q4.println(d);
+		}
+		
+		//NER Locations
+		q4.println("\r\nLocations:");
+		String [] locations = NamedEntityFinder.entitiesSpanToString(NamedEntityFinder.findEntities('l', text), text);
+		for(String l : locations){
+			q4.println(l);
+		}
+
+		//NER Money
+		q4.println("\r\nMoney:");
+		String [] money = NamedEntityFinder.entitiesSpanToString(NamedEntityFinder.findEntities('m', text), text);
+		for(String m : money){
+			q4.println(m);
+		}
+		
+		//NER Organizations
+		q4.println("\r\nOrganizations:");
+		String [] orgs = NamedEntityFinder.entitiesSpanToString(NamedEntityFinder.findEntities('o', text), text);
+		for(String o : orgs){
+			q4.println(o);
+		}
+
+		//NER Persons
+		q4.println("\r\nPersons:");
+		String [] persons = NamedEntityFinder.entitiesSpanToString(NamedEntityFinder.findEntities('p', text), text);
+		for(String p : persons){
+			q4.println(p);
+		}
+
+		//NER Times
+		q4.println("\r\nTimes:");
+		String [] times = NamedEntityFinder.entitiesSpanToString(NamedEntityFinder.findEntities('t', text), text);
+		for(String t : times){
+			q4.println(t);
+		}		
+		q4.close();
+		
+	}
+}

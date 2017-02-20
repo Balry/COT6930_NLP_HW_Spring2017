@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="opennlp.tools.tokenize.SimpleTokenizer"/>
+<fullyQualifiedTypeName name="opennlp.tools.tokenize.TokenizerME"/>
+<fullyQualifiedTypeName name="opennlp.tools.tokenize.WhitespaceTokenizer"/>
+<fullyQualifiedTypeName name="opennlp.tools.sentdetect.SentenceModel"/>
+<fullyQualifiedTypeName name="toolsMP.SentenceDetector"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="toolsMP.WSTokenizer"/>
+<fullyQualifiedTypeName name="java.nio.charset.StandardCharsets"/>
+<fullyQualifiedTypeName name="java.nio.file.Paths"/>
+<fullyQualifiedTypeName name="java.nio.file.Files"/>
+<fullyQualifiedTypeName name="java.nio.charset.Charset"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="opennlp.tools.namefind.TokenNameFinderModel"/>
+<fullyQualifiedTypeName name="opennlp.tools.namefind.NameFinderME"/>
+<fullyQualifiedTypeName name="opennlp.tools.util.Span"/>
+<fullyQualifiedTypeName name="opennlp.tools.postag.POSModel"/>
+<fullyQualifiedTypeName name="opennlp.tools.postag.POSSample"/>
+<fullyQualifiedTypeName name="opennlp.tools.postag.POSTagger"/>
+<fullyQualifiedTypeName name="toolsMP.POSTagger"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="opennlp.tools.cmdline.postag.POSModelLoader"/>
+<fullyQualifiedTypeName name="opennlp.tools.postag.POSTaggerME"/>
+<fullyQualifiedTypeName name="opennlp.tools.chunker.ChunkerModel"/>
+<fullyQualifiedTypeName name="opennlp.tools.chunker.ChunkerME"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="opennlp.tools.parser.ParserModel"/>
+<fullyQualifiedTypeName name="opennlp.tools.parser.ParserFactory"/>
+<fullyQualifiedTypeName name="opennlp.tools.parser.Parser"/>
+<fullyQualifiedTypeName name="opennlp.tools.cmdline.parser.ParserTool"/>
+<fullyQualifiedTypeName name="opennlp.tools.parser.Parse"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,39 @@
+~~~~ Question 4 - Named Entities Finder Output ~~~~
+
+Dates:
+Token number [7..8) date] is: Monday 
+Token number [316..317) date] is: 1997 
+Token number [318..319) date] is: Monday 
+Token number [350..353) date] is: late last week 
+Token number [502..506) date] is: end of December 2003 
+Token number [515..517) date] is: last week 
+Token number [524..525) date] is: Monday 
+Token number [533..534) date] is: Tuesday 
+
+Locations:
+Token number [81..82) location] is: Paris 
+Token number [83..84) location] is: London 
+Token number [206..207) location] is: Channel 
+Token number [354..355) location] is: London 
+
+Money:
+Token number [31..36) money] is: $ 1 . 56 billion 
+Token number [68..73) money] is: $ 14 . 1 billion 
+Token number [368..370) money] is: 130 pence 
+Token number [372..376) money] is: 10 . 40 francs 
+Token number [388..390) money] is: 160 pence 
+Token number [410..415) money] is: $ 13 . 6 billion 
+Token number [422..427) money] is: $ 1 . 56 billion 
+Token number [440..445) money] is: $ 5 . 8 billion 
+Token number [518..521) money] is: 113 . 5 
+
+Organizations:
+None
+
+Persons:
+Token number [142..144) person] is: Alastair Morton 
+Token number [196..197) person] is: Eurotunnel 
+Token number [237..239) person] is: Patrick Ponsolle 
+
+Times:
+None
